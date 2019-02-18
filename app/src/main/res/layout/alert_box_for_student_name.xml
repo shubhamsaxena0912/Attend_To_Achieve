@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <ImageButton
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#20B2AA"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <TextView
+        android:id="@+id/textAddStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/imageView"
+        android:backgroundTint="#20B2AA"
+        android:text="  Add Student"
+        android:textColor="#20B2AA"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textEnterRegNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="68dp"
+        android:text="Enter Name :"
+        android:textColor="#20B2AA"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="104dp"
+        android:backgroundTint="#20B2AA"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#20B2AA"
+        android:textCursorDrawable="@null"/>
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Name"
+        android:orientation="horizontal"
+        android:background="#000">
+
+        <Button
+            android:id="@+id/Cancelbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000"
+            android:text="@android:string/cancel"
+            android:textColor="#20B2AA" />
+
+        <Button
+            android:id="@+id/Savebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#000"
+            android:text="save"
+            android:textColor="#20B2AA" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout"
+        android:text="Student Name can only contain a-z, A-Z"
+        android:textSize="15sp"
+        android:textColor="#ff0000" />
+</android.widget.RelativeLayout>

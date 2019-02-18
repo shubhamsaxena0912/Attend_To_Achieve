@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Reg_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="1640078"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Reg_no"
+        android:text="Subhashni Kumari Singh"
+        android:textSize="20sp"
+        android:textColor="#000"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/name"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioPresent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Present" />
+
+        <RadioButton
+            android:id="@+id/radioAbsent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_weight="1"
+            android:text="Absent" />
+
+        <RadioButton
+            android:id="@+id/Medical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_weight="1"
+            android:text="Medical" />
+    </RadioGroup>
+
+
+</android.widget.RelativeLayout>
